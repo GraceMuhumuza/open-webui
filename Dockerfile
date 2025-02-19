@@ -1,3 +1,5 @@
+# Set Node.js memory limit to 4 GB
+RUN node --max-old-space-size=4096 $(which npm) run build
 # syntax=docker/dockerfile:1
 # Initialize device type args
 # use build args in the docker build command with --build-arg="BUILDARG=true"
